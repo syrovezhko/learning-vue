@@ -164,4 +164,4 @@ I think the counter shouldn't go below zero. To fix it I suggest adding the cond
 
 So, now it's look like counter.
 
-Well, it was good sprint. I think it's tea time. I hope you have something like [this](#). Check it out before the break.
+Well, it was good sprint. I think it's tea time. I hope you have something like [this](https://github.com/syrovezhko/learning-vue/tree/46d9b1822226cdd9553d5476a3b2d2a4958d0591/lesson%201/src). Check it out before the break.
