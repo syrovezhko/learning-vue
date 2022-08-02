@@ -142,5 +142,26 @@ Vue.createApp(App).mount('#app')
 **Great! It's work!**  
 You may change the value of the returns object for another number to be sure. You can see, the counter may changed manually via JS file.
 
-Well, it was good sprint. I think it's tea time.
-I hope you have something like [this](https://github.com/syrovezhko/learning-vue/tree/32b85746234dd351ad21e20a62c5f3b8b860d000/lesson%201/src). Check it out before the break.
+### Let's connect the buttons!
+
+With Vue we don't need to find out elements by `document.querySelector()` etc. We don't need to think about ordinary `Event Listeners`. Just insert some directives into the DOM nodes.  
+We are interested in `v-on` now. It's make the listener for element which it's contained. It's work like `addEventListener()` in JS.  
+For example, we need to to determine the `click` event. The `v-on:click` will help us.
+
+To add action on plus button just add `v-on` directive with counter value incrementing to that node:
+```html
+<button class="btn primary" v-on:click="counter++">+</button>
+```
+The same way let's activate the minus button:
+```html
+<button class="btn danger" v-on:click="counter--">-</button>
+```
+Check it out! The number can go up and down. But it's can go below zero.  
+I think the counter shouldn't go below zero. To fix it I suggest adding the conditional branching width `?`operator: 
+```html
+<button class="btn danger" v-on:click="counter > 0 ? counter-- : 0">-</button>
+```
+
+So, now it's look like counter.
+
+Well, it was good sprint. I think it's tea time. I hope you have something like [this](#). Check it out before the break.
