@@ -1,6 +1,12 @@
 # Lesson 1
 ## Counter
 
+Today we are going to create the simple counter:
+
+![image](counter.gif)
+> Test on the GitHab Pages: [click](https://syrovezhko.github.io/learning-vue/lesson%201/src/)
+***
+
 Let's create the basics template like [this](https://github.com/syrovezhko/learning-vue/tree/2226329ee93b5fb3e428666784329677c371a878/lesson%201).  
 For start we need import Vue.js as a CDN package. It's usually used for prototyping or learning purposes. We can use the latest version with: 
 ```html
@@ -165,3 +171,5 @@ I think the counter shouldn't go below zero. To fix it I suggest adding the cond
 So, now it's look like counter.
 
 Well, it was good sprint. I think it's tea time. I hope you have something like [this](https://github.com/syrovezhko/learning-vue/tree/46d9b1822226cdd9553d5476a3b2d2a4958d0591/lesson%201/src). Check it out before the break.
+
+See you next [lesson](https://github.com/syrovezhko/learning-vue/tree/lesson2).
