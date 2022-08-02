@@ -93,4 +93,4 @@ For start we need import Vue.js as a CDN package. It's usually used for prototyp
 ```
 </details>
 
-We'll get two files like [this](#), after all.
+We'll get two files like [this](https://github.com/syrovezhko/learning-vue/tree/ff442722d400bd98291e1e54cf74f090f589b614/lesson%201), after all.
