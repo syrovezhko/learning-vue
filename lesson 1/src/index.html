@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container pt-5">
+    <div class="container pt-5" id="app">
       <div class="card center">
-        <h1>Counter: 0</h1>
+        <h1>Counter: {{ counter }}</h1>
         <div>
           <button class="btn primary">+</button>
           <button class="btn danger">-</button>
@@ -17,5 +17,6 @@
       </div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
   </body>
 </html>

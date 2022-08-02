@@ -94,3 +94,53 @@ For start we need import Vue.js as a CDN package. It's usually used for prototyp
 </details>
 
 We'll get two files like [this](https://github.com/syrovezhko/learning-vue/tree/ff442722d400bd98291e1e54cf74f090f589b614/lesson%201), after all.
+
+### It's time Vue magic😉
+
+Now we are ready to implement JS-file into the project. It's going to be an `app.js`.  
+***Attention!*** *Don't forget to include it after [CDN package](#counter) with:* 
+```html
+<script src="app.js"></script>
+```
+Inside the `app.js` we should use `Vue.createApp()` method, with will contained the object. The object will help us set up our web application.  
+For convenience, I moved it to a variable, or rather, to a constant:
+```js
+const App = {
+
+}
+
+Vue.createApp(App)
+```
+In order to pass data to HTML, we need to use the `data()` method. The `data()` should return an **object** where **key** is the name of the variable and **value** is the value of the variable.  
+Sounds complex, I know. It is easier to see on the example of a *counter*:
+```js
+const App = {
+  data() {
+    return {
+      counter: 0
+    }
+  }
+}
+
+Vue.createApp(App)
+```
+To use it in HTML, we need to interpolate the ***variable*** using the `{{ }}` expression. Fixe the HTML like this:
+```html
+<h1>Counter: {{ counter }}</h1>
+```
+However, this is not enough. The browser just renders `Counter: {{ counter }}` as the header.  
+The choose of the root DOM node for Vue interaction is needed. We are able to do this by adding the **ID** to the container, for example:
+```html
+<div class="container pt-5" id="app">
+```
+All right. Now we should ask Vue to init the app on that place using `mount()` method.  
+There are a lot of ways to do it. In my opinion it should be simple as much as possible. Fix the last line in `app.js` like this:
+```js
+Vue.createApp(App).mount('#app')
+```
+
+**Great! It's work!**  
+You may change the value of the returns object for another number to be sure. You can see, the counter may changed manually via JS file.
+
+Well, it was good sprint. I think it's tea time.
+I hope i have something like [this](#). Check it out before the break.
