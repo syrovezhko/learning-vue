@@ -1,3 +1,6 @@
-# learning vue
-This is my vue learning blog.
-I'm going to post my successes and failures in my endeavors. I hope this will help me not to give up on the way to the goal and, perhaps, will be a structured tutorial for all interns or beginners.
+# Lesson 1
+### Counter
+
+Let's create the basics template like [this](#)
+For start we need import Vue.js as a CDN package. It's usually used for prototyping or learning purposes. We can use the latest version with:
+`<script src="https://unpkg.com/vue@next"></script>`
