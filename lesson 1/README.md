@@ -143,4 +143,4 @@ Vue.createApp(App).mount('#app')
 You may change the value of the returns object for another number to be sure. You can see, the counter may changed manually via JS file.
 
 Well, it was good sprint. I think it's tea time.
-I hope i have something like [this](#). Check it out before the break.
+I hope you have something like [this](https://github.com/syrovezhko/learning-vue/tree/32b85746234dd351ad21e20a62c5f3b8b860d000/lesson%201/src). Check it out before the break.
