@@ -198,5 +198,5 @@ The `v-bind` directive make it possible to transmit the data to attribute. We do
 ```
 <br>
 
-All right, I've got something like [this](https://github.com/syrovezhko/learning-vue/tree/4f6c7f9f0a9bbd011f4f2160b6bfc5831e46a20d/lesson%202/src).  
+All right, I've got something like [this](https://github.com/syrovezhko/learning-vue/tree/c41276f33edc63668eeb7f122d96f26cd0793432/lesson%202/src).  
 Now, it's time to control it! 
