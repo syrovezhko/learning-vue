@@ -87,7 +87,7 @@ Vue.createApp(App).mount('#app')
 
 ### Step 1: base markup
 
-I believe, it's better to control the app by JS file for the most part.  this is also true for the headers, placeholders etc.  
+I believe, it's better to control the app by JS file for the most part. This is also true for the headers, placeholders etc.  
 We've already used *interpolation* to display the number inside `<h1>` tag. And, consequently, it's possible to transmit all header data this way. Let's add for the card a child like this:
 
 ```HTML
@@ -173,8 +173,11 @@ As it is the note taking app, obviously we need a form with input, add button an
 }
 ```
 </details>
+<br>
 
-Let's launch it. Looks pretty, doesn't it? But we don't have some part, an input placeholder. It would be logical create a model and implement interpolation like this:
+**Let's launch it.** Looks pretty, doesn't it?
+
+But we don't have some part, an input placeholder. It would be logical create a model and implement interpolation like this:
 
 ```JS
 const App = {
@@ -197,6 +200,7 @@ The `v-bind` directive make it possible to transmit the data to attribute. We do
 ```HTML
 <input class="form__input" type="text" v-bind:placeholder="placeholderString">
 ```
+<br>
 
-All right, I've got something like [this]().  
-Now, it's start to control it time! 
+All right, I've got something like [this](https://github.com/syrovezhko/learning-vue/tree/3233cda3e68ffdb6e78a10e0cffe640bbd533409/lesson%202/src).  
+Now, it's time to control it! 
