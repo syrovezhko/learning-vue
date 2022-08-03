@@ -107,9 +107,9 @@ As it is the note taking app, obviously we need a form with input, add button an
 ```HTML
 <div class="form">
   <input class="form__input" type="text">
-  <button class="btn">add</button>
-  <hr />
 </div>
+<button class="btn">add</button>
+<hr />
 ```
 
 <details>
@@ -198,5 +198,5 @@ The `v-bind` directive make it possible to transmit the data to attribute. We do
 ```
 <br>
 
-All right, I've got something like [this](https://github.com/syrovezhko/learning-vue/tree/3233cda3e68ffdb6e78a10e0cffe640bbd533409/lesson%202/src).  
+All right, I've got something like [this](https://github.com/syrovezhko/learning-vue/tree/4f6c7f9f0a9bbd011f4f2160b6bfc5831e46a20d/lesson%202/src).  
 Now, it's time to control it! 
