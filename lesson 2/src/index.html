@@ -9,7 +9,14 @@
   </head>
   <body>
     <div class="container" id="app">
-      <div class="card"></div>
+      <div class="card">
+        <h1>{{ title }}</h1>
+        <div class="form">
+          <input class="form__input" type="text" v-bind:placeholder="placeholderString">
+          <button class="btn mt-1">add</button>
+          <hr />
+        </div>
+      </div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>

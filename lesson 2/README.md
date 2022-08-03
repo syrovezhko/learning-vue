@@ -84,3 +84,119 @@ const App = {
 Vue.createApp(App).mount('#app')
 ```
 </details>
+
+### Step 1: base markup
+
+I believe, it's better to control the app by JS file for the most part.  this is also true for the headers, placeholders etc.  
+We've already used *interpolation* to display the number inside `<h1>` tag. And, consequently, it's possible to transmit all header data this way. Let's add for the card a child like this:
+
+```HTML
+<h1>{{ title }}</h1>
+```
+
+And, of course, for the app.js returns object a corresponding model:
+
+```JS
+title: 'Note list'
+```
+
+Yep, it's work!
+
+As it is the note taking app, obviously we need a form with input, add button and a separation line for notes will be carried:
+
+```HTML
+<div class="form">
+  <input class="form__input" type="text">
+  <button class="btn mt-1">add</button>
+  <hr />
+</div>
+```
+
+<details>
+<summary>The styles for it are up to you, but I used this:</summary>
+
+```CSS
+.form {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.form__input {
+  margin: 0;
+  outline: none;
+  border: 2px solid #ccc;
+  display: block;
+  width: 100%;
+  color: #2c3e50;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.form__input:active,
+.form__input:focus {
+  transition: border 0.22s;
+  border: 2px solid #42b983;
+}
+
+.btn {
+  color: #42b983;
+  position: relative;
+  place-content: center;
+  place-items: center;
+  width: fit-content;
+  border-radius: 99px;
+  letter-spacing: 0.05em;
+  border: 1px solid #42b983;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+  padding: 0.5rem 1.5rem;
+  white-space: nowrap;
+  font-weight: 700;
+  outline: none;
+  background: #fff;
+  transition: all 0.22s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn:active {
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+```
+</details>
+
+Let's launch it. Looks pretty, doesn't it? But we don't have some part, an input placeholder. It would be logical create a model and implement interpolation like this:
+
+```JS
+const App = {
+  data() {
+    return {
+      title: 'Note list',
+      placeholderString: 'Input your note please',
+    }
+  }
+}
+```
+```HTML
+<input class="form__input" type="text" placeholder="{{ placeholderString }}">
+```
+
+However, it will display `{{ placeholderString }}` in the input line, not our text. Well, obviously another way is needed...
+
+The `v-bind` directive make it possible to transmit the data to attribute. We don't more need curly braces. It works like `v-on`:
+
+```HTML
+<input class="form__input" type="text" v-bind:placeholder="placeholderString">
+```
+
+All right, I've got something like [this]().  
+Now, it's start to control it time! 
