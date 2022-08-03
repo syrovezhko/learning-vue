@@ -107,7 +107,7 @@ As it is the note taking app, obviously we need a form with input, add button an
 ```HTML
 <div class="form">
   <input class="form__input" type="text">
-  <button class="btn mt-1">add</button>
+  <button class="btn">add</button>
   <hr />
 </div>
 ```
@@ -166,10 +166,6 @@ As it is the note taking app, obviously we need a form with input, add button an
 
 .btn:active {
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
-
-.mt-1 {
-  margin-top: 1rem;
 }
 ```
 </details>
