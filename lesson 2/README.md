@@ -410,3 +410,20 @@ It's not so pretty when the `notes` array is empty. I want to see a warning that
 ```
 
 Much better I guess!
+
+Oh no... One more problem I see: the empty string could be saved as a note.
+<details>
+<summary>You know what I mean. Don't peak!😉</summary>
+
+***Well-well-well... You just checking yourself. I hope so.***
+
+Yes, we need to add the `inputValue` check into the `addNewNote` method. If it's not an empty string we may do push data to the array:
+```JS
+addNewNote() {
+  if (this.inputValue !== '') {
+    this.notes.push(this.inputValue)
+    this.inputValue = ''
+  }
+}
+```
+</details>
