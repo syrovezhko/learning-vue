@@ -88,3 +88,9 @@ body {
   justify-content: space-between;
   padding: 0.5rem 0;
 }
+
+.danger {
+  background: #e53935;
+  color: #fff;
+  border-color: #e53935;
+}

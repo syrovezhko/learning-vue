@@ -25,15 +25,21 @@
           class="btn mt-1"
           v-on:click="addNewNote"
         >
-            add
+          add
         </button>
         <hr />
         <ul class="list">
           <li
             class="list__item"
-            v-for="myNote in notes"
+            v-for="(myNote, index) in notes"
           >
               {{ myNote }}
+              <button
+                class="btn danger"
+                v-on:click="removeNote(index)"
+              >
+                delete
+              </button>
           </li>
         </ul>
       </div>

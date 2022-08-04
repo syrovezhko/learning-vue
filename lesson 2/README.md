@@ -346,3 +346,54 @@ What about adding note by press enter key? But do not rush to make new method. V
 ```
 
 It's time to clear notes array in app.js, I guess. Bla, blabla were good, but we can control list's items confidently.
+
+### Step 5: parameter passing in method
+
+In order to complete the application the delete feature is needed.  
+The delete button could be added to the HTML, for example:
+```HTML
+<ul class="list">
+  <li
+    class="list__item"
+    v-for="myNote in notes"
+  >
+      {{ myNote }}
+      <button class="btn danger">delete</button>
+  </li>
+</ul>
+```
+
+Obviously, new method needed. I believe, you know, the `v-on` directive with `click` listening will call it:
+```HTML
+ <button
+  class="btn danger"
+  v-on:click="removeNote"
+>
+  delete
+</button>
+```
+It was easy, I know. But how could we determinate what item of array should be removed?  
+First of all, we should know the index of array's element. To control it via HTML, the `v-for` list iterator must be changed to: `v-for="(myNote, index) in notes"`.  
+So, finally the new note template look lit this:
+```HTML
+<ul class="list">
+  <li
+    class="list__item"
+    v-for="(myNote, index) in notes"
+  >
+      {{ myNote }}
+      <button
+        class="btn danger"
+        v-on:click="removeNote(index)"
+      >
+        delete
+      </button>
+  </li>
+</ul>
+```
+Yes, we may transmit the arguments using expression like this: `removeNote(index)`. The `removeNote` will used `splice` array method. Let's make this:
+```JS
+removeNote(index) {
+  this.notes.splice(index, 1)
+}
+```
