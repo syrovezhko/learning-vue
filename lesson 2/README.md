@@ -261,7 +261,7 @@ data() {
   }
 }
 ```
-And, of course, let's create the HTML list before the button to output it:
+And, of course, let's create the HTML after the `<hr />` tag to output it:
 ```HTML
 <ul class="list">
   <li class="list__item">
