@@ -75,7 +75,7 @@ It was much more complicated app than [counter](https://github.com/syrovezhko/le
 
 I've studied `v-on`, `v-for`, and `v-if`/`v-else` directives. I used [Two-Way Data Binding](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202#step-2-two-way-data-binding), [Events Modifiers](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202#step-5-events-modifiers), [Conditionals](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202#step-6-conditionals) etc.  
 
-It has spent 6 steps totally on the way to success.
+It has spent 2 days total on the way to success.
 
 ### ***Check it out on the GitHub: [click](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202)***
 
