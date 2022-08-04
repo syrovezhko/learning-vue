@@ -307,3 +307,24 @@ In this case, we can use `v-for`. It is likewise to `for` loop. They both use sa
 </ul>
 ```
 Looks better, doesn't it?
+
+### Step 4: Adding a bit of reactivity
+
+Now we need to make button work. We know how to interact with `v-on`. Just simply complementing th button like this:
+```HTML
+<button
+  class="btn mt-1"
+  v-on:click="addNewNote">
+    add
+</button>
+```
+To process the click, let's create new method as well as in the [step 2](#step-2-two-way-data-binding) section. This method, `addNewNote`, will `push` the `inputValue` to `notes` array:
+```JS
+addNewNote() {
+  this.notes.push(this.inputValue)
+  this.inputValue = ''
+}
+```
+Calm down, I know. We've spent a lot time to understand `this` concept with JavaScript. It doesn't work like this in JS, I know. So just accept it. You'll like it, I promise.
+
+We may remove the header with `inputValue` from HTML and `console.log` for it too from methods, I think.
