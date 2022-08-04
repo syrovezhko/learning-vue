@@ -28,7 +28,7 @@
           add
         </button>
         <hr />
-        <ul class="list">
+        <ul class="list" v-if="notes.length !== 0">
           <li
             class="list__item"
             v-for="(myNote, index) in notes"
@@ -42,6 +42,7 @@
               </button>
           </li>
         </ul>
+        <div v-else>There are no notes here. Please make the firs one.</div>
       </div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>

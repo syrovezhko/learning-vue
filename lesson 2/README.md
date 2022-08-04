@@ -397,3 +397,16 @@ removeNote(index) {
   this.notes.splice(index, 1)
 }
 ```
+
+### Step 6: Conditionals
+
+We have got the note taking app. We can add and remove notes. What else? `IF`, maybe?😉  
+It's not so pretty when the `notes` array is empty. I want to see a warning that there are no notes on the list. I mean, if length of array is equals to zero. We should do something like this:
+```HTML
+<ul class="list" v-if="notes.length !== 0">
+...
+</ul>
+<div v-else>There are no notes here. Please make the firs one.</div>
+```
+
+Much better I guess!
