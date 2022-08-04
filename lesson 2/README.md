@@ -7,7 +7,7 @@
 
 Following our [earlier lesson](https://github.com/syrovezhko/learning-vue/tree/lesson1/lesson%201), I'd suggest you to continue the CDN use. I'm going to learn more about ***Events*** by a note taking app creating. This is how it will look like finally:
 
-![image](#) *coming soon...*
+![image](note_taking_app.gif)
 > Test on the GitHab Pages: [click](https://syrovezhko.github.io/learning-vue/lesson%202/src/)
 ***
 
@@ -427,3 +427,14 @@ addNewNote() {
 }
 ```
 </details>
+
+***
+
+**Hurray! We did it!**  
+You mau check out result of the work done here: [click](https://github.com/syrovezhko/learning-vue/tree/37dc6dbddb4f6237246fd60517ac7a2d71e88efa/lesson%202/src).
+
+See you next lesson! Bye😀
+
+**[Lesson 1](https://github.com/syrovezhko/learning-vue/tree/lesson1/lesson%201) | [Lesson 3](https://github.com/syrovezhko/learning-vue/tree/lesson3/lesson%203)**
+
+[Back main branch](https://github.com/syrovezhko/learning-vue)
