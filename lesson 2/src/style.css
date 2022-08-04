@@ -76,3 +76,15 @@ body {
 .btn:active {
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}

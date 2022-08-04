@@ -12,8 +12,22 @@
       <div class="card">
         <h1>{{ title }}</h1>
         <div class="form">
-          <input class="form__input" type="text" v-bind:placeholder="placeholderString">
+          <input
+            class="form__input"
+            type="text"
+            v-bind:placeholder="placeholderString"
+            v-bind:value="inputValue"
+            v-on:input="inputHandler"
+          >
         </div>
+        <h2>inputValue: {{ inputValue }}</h2>
+        <ul class="list">
+          <li
+            class="list__item"
+            v-for="myNote in notes">
+              {{ myNote }}
+          </li>
+        </ul>
         <button class="btn mt-1">add</button>
         <hr />
       </div>

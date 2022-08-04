@@ -200,3 +200,110 @@ The `v-bind` directive make it possible to transmit the data to attribute. We do
 
 All right, I've got something like [this](https://github.com/syrovezhko/learning-vue/tree/c41276f33edc63668eeb7f122d96f26cd0793432/lesson%202/src).  
 Now, it's time to control it! 
+
+### Step 2: Two-Way Data Binding
+
+In order to save the note we need get data from the input. 
+To do this, just putt this: `v-bind:value="inputValue"` ti the `input` tag. Also, create a model, as is the case with placeholder, but with empty string: `inputValue: ''`.  
+Now we should listen the event by `v-on`. We're interested in `input` event. So, again, just putt this: `v-on:input="inputHandler"` ti the `input` tag. And, you guessed it, we've got to do something.
+
+This action called as `method`. Now we learn how to delegate some functionality from `HTML` to `JavaScript`.
+
+First of all, the `methods` object, that will contain future methods, needs to be installed on the `root` of `App` const:
+```JS
+const App = {
+  data() {
+    // I have removed previously written code here in illustrative purposes.
+  },
+  methods: {
+    // Subsequently, all the activity will be here.
+  }
+}
+```
+This is the object we we'll enumerate the feature set of our application. I had suggested earlier `inputHandler` as a name of the accepted data. I'll use this naming for the event processing method. To better understand, let's write this and take a closer look in the console:
+```JS
+methods: {
+  inputHandler(event) {
+    console.log("inputHandler", event)
+  }
+}
+```
+You will see the `InputEvent` handling as an object of a lot of parameters. By specify the request of logging, `event.target.value`, we see the all entries in the console.  
+I think we may a little bit debug on the web page. Insert this line after the form:
+```HTML
+<h2>inputValue: {{ inputValue }}</h2>
+```
+Using `this` keyword we may utilize the returns's model like this:
+```JS
+methods: {
+  inputHandler(event) {
+    console.log("inputHandler", event.target.value)
+    this.inputValue = event.target.value
+  }
+}
+```
+
+Now the title changes dynamically with the input value.  
+Yes, we didn't utilized through the `data` object like: `this.data.inputValue`. This is one of the features of Vue that we will discuss later.
+
+The `Two-Way Data Binding` allows us to change the page part only with out refresh.
+
+### Step 3: Display lists with v-for
+
+And thus we come to implementation of the basic feature. And yes, we need to add an array as a return model. In this case, `data` object be like: 
+```JS
+data() {
+  return {
+    title: 'Note list',
+    placeholderString: 'Input your note please',
+    inputValue: '',
+    notes: ['note 1: blablabla', 'note 2: blablabla', 'note 3: blablabla']
+  }
+}
+```
+And, of course, let's create the HTML list before the button to output it:
+```HTML
+<ul class="list">
+  <li class="list__item">
+    {{ notes[0]}}
+  </li>
+  <li class="list__item">
+    {{ notes[1]}}
+  </li>
+  <li class="list__item">
+    {{ notes[2]}}
+  </li>
+</ul>
+```
+
+<details>
+<summary>And again,the styles for it are up to you, but I used this:</summary>
+
+```CSS
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+```
+</details>
+<br>
+All right, we can transmit array manually. But it is not convenient, because we are not aware a finite number of elements. It is obvious we need to iterate the list element.  
+
+In this case, we can use `v-for`. It is likewise to `for` loop. They both use same expression.
+```HTML
+<ul class="list">
+  <li
+    class="list__item"
+    v-for="myNote in notes">
+      {{ myNote }}
+  </li>
+</ul>
+```
+Looks better, doesn't it?
