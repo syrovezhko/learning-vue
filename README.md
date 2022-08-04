@@ -63,3 +63,20 @@ Vue.createApp(App).mount('#app')
 
 ***
 
+## Lesson 2: [A note taking app](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202)
+
+`03.08.2022 - 04.08.2022`
+***Deploy link: [click](https://syrovezhko.github.io/learning-vue/lesson%202/src/).***
+
+
+![image](https://github.com/syrovezhko/learning-vue/blob/lesson2/lesson%202/note_taking_app.gif)
+
+It was much more complicated app than [counter](https://github.com/syrovezhko/learning-vue/tree/lesson1/lesson%201). The local storage is needed, I guess. May be in future.
+
+I've studied `v-on`, `v-for`, and `v-if`/`v-else` directives. I used [Two-Way Data Binding](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202#step-2-two-way-data-binding), [Events Modifiers](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202#step-5-events-modifiers), [Conditionals](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202#step-6-conditionals) etc.  
+
+It has spent 6 steps totally on the way to success.
+
+### ***Check it out on the GitHub: [click](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202)***
+
+***
