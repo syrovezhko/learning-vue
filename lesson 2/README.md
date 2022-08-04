@@ -301,7 +301,8 @@ In this case, we can use `v-for`. It is likewise to `for` loop. They both use sa
 <ul class="list">
   <li
     class="list__item"
-    v-for="myNote in notes">
+    v-for="myNote in notes"
+  >
       {{ myNote }}
   </li>
 </ul>
@@ -314,7 +315,8 @@ Now we need to make button work. We know how to interact with `v-on`. Just simpl
 ```HTML
 <button
   class="btn mt-1"
-  v-on:click="addNewNote">
+  v-on:click="addNewNote"
+>
     add
 </button>
 ```
@@ -328,3 +330,19 @@ addNewNote() {
 Calm down, I know. We've spent a lot time to understand `this` concept with JavaScript. It doesn't work like this in JS, I know. So just accept it. You'll like it, I promise.
 
 We may remove the header with `inputValue` from HTML and `console.log` for it too from methods, I think.
+
+### Step 5: Events Modifiers
+
+What about adding note by press enter key? But do not rush to make new method. Vue may provide us something ready. And, you guessed it, we need `v-on` with `keypress` event. And of course, it's possible to ask listen the `enter` key. Here we go: `v-on:keypress.enter`. Sounds crazy, doesn't it? Thats how we can call `addNewNote` method:
+```HTML
+<input
+  class="form__input"
+  type="text"
+  v-bind:placeholder="placeholderString"
+  v-bind:value="inputValue"
+  v-on:input="inputHandler"
+  v-on:keypress.enter="addNewNote"
+>
+```
+
+It's time to clear notes array in app.js, I guess. Bla, blabla were good, but we can control list's items confidently.

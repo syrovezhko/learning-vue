@@ -18,18 +18,21 @@
             v-bind:placeholder="placeholderString"
             v-bind:value="inputValue"
             v-on:input="inputHandler"
+            v-on:keypress.enter="addNewNote"
           >
         </div>
         <button
           class="btn mt-1"
-          v-on:click="addNewNote">
+          v-on:click="addNewNote"
+        >
             add
         </button>
         <hr />
         <ul class="list">
           <li
             class="list__item"
-            v-for="myNote in notes">
+            v-for="myNote in notes"
+          >
               {{ myNote }}
           </li>
         </ul>

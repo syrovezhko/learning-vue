@@ -4,7 +4,7 @@ const App = {
       title: 'Note list',
       placeholderString: 'Input your note please',
       inputValue: '',
-      notes: ['bla', 'blabla', 'blablabla']
+      notes: []
     }
   },
   methods: {
