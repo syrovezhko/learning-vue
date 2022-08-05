@@ -182,7 +182,4 @@ See you next lesson! Bye😀
 
 **[Contents](https://github.com/syrovezhko/learning-vue) | [Lesson 2](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202)**
 
-
-[lesson](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202).
-
 [Back main branch](https://github.com/syrovezhko/learning-vue)
