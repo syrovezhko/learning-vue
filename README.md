@@ -59,7 +59,7 @@ Vue.createApp(App).mount('#app')
 ```
 </details>
 
-### ***Check it out on the GitHub: [click](https://github.com/syrovezhko/learning-vue/tree/lesson1/lesson%201)***
+### ***Learn more: [click](https://github.com/syrovezhko/learning-vue/tree/lesson1/lesson%201)***
 
 ***
 
@@ -77,6 +77,6 @@ I've studied `v-on`, `v-for`, and `v-if`/`v-else` directives. I used [Two-Way Da
 
 It has spent 2 days total on the way to success.
 
-### ***Check it out on the GitHub: [click](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202)***
+### ***Learn more: [click](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202)***
 
 ***
