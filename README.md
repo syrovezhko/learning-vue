@@ -6,7 +6,7 @@ I'm going to post my successes and failures in my endeavors. I hope this will he
 ***
 ## Lesson 1: [counter](https://github.com/syrovezhko/learning-vue/tree/lesson1/lesson%201)
 
-`02.08.2022`
+`02.08.2022`  
 ***Deploy link: [click](https://syrovezhko.github.io/learning-vue/lesson%201/src/).***
 
 
@@ -65,7 +65,7 @@ Vue.createApp(App).mount('#app')
 
 ## Lesson 2: [A note taking app](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202)
 
-`03.08.2022 - 04.08.2022`
+`03.08.2022 - 04.08.2022`  
 ***Deploy link: [click](https://syrovezhko.github.io/learning-vue/lesson%202/src/).***
 
 
