@@ -21,6 +21,25 @@ Fore example: `v-bind:value="inputValue"` is equal to `:value="inputValue"`, `v-
 Now, you may minimize the code like this. Just do it!
 
 ![image](do_it.gif)
+
+### Step 2: introduction to forms optimization, `v-model`
+
+We did a lot an extra work, you know? We wrote manually the `inputValue` bind throw the `inputHandler` model to provide [Two-Way Data Binding](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202#step-2-two-way-data-binding). Don't start lobbing rotten tomatoes at me. It was necessary to understanding the cornerstone of `v-model`.
+
+Now, we may remove `inputHandler` from methods. Also, `v-bind:value="inputValue"` and `v-on:input="inputHandler"` should be replaced by `v-model` in the HTML, like this:
+```HTML
+<input
+  class="form__input"
+  type="text"
+  @input="inputHandler"
+  @keypress.enter="addNewNote"
+  v-model="inputValue" <!-- 👈👈👈write this -->
+  <!-- instead of this👇👇👇 -->
+  <!-- :value="inputValue" -->
+  <!-- @input="inputHandler" -->
+>
+```
+You may see, the app works the same but 4 code strings shorter.
 ***
 
 **Hurray! We did it!**  
