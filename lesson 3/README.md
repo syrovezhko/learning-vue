@@ -6,7 +6,8 @@
 
 We may make it better, I think. The optimizations of code, local storage etc.
 
-![image](#) coming soon...
+![image](note_taking_app_v2.gif)
+
 > Test on the GitHab Pages: [click](https://syrovezhko.github.io/learning-vue/lesson%203/src/)
 ***
 
@@ -127,8 +128,8 @@ And to supplement CSS like this:
 
 ***
 
-**Hurray! We did it!**  
-You mau check out result of the work done here: [click](#).
+**It's enough for to today, I think.**  
+You mau check out result of the work done here: [click](https://github.com/syrovezhko/learning-vue/tree/2846f7ba412e6409e779f0d92dcd3ad3e2bf0f47/lesson%203/src).
 
 See you next lesson! Bye😀
 
