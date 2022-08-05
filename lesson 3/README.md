@@ -12,6 +12,14 @@ We may make it better, I think. The optimizations of code, local storage etc.
 
 We will continue to work with the previous lesson code. You may copy it from [here](https://github.com/syrovezhko/learning-vue/tree/37dc6dbddb4f6237246fd60517ac7a2d71e88efa/lesson%202/src).
 
+### Step 1: code minimize by Labels
+
+You will notice that there are two most commonly used vue directives: `v-bind` and `v-on`.  
+Usually developers used that's short labels: `:` Instead of `v-bind` and `@` Instead of `v-on`.  
+Fore example: `v-bind:value="inputValue"` is equal to `:value="inputValue"`, `v-on:input="inputHandler"` is equal to `@input="inputHandler"`.
+
+Now, you may minimize the code like this. Just do it!
+![image](do_it.gif)
 ***
 
 **Hurray! We did it!**  
