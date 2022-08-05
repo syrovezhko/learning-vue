@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+[v-cloak] {
+  display: none;
+}
+
 body {
   font-family: Inter, Roboto, Oxygen, Fira Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;

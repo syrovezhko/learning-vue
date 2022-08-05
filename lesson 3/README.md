@@ -95,7 +95,35 @@ const App = {
 Vue.createApp(App).mount('#app')
 ```
 </details>
-It's not so complicated. But the application become much more useful!
+It's not so complicated. But the application become much more useful!  
+But take a good look at the page after refresh. The content is twitching. I may see it clear using `low-end mobile mode`:
+
+![image](v-cloak_needed.gif)
+
+As written in the [documentation](https://vuejs.org/api/built-in-directives.html#v-cloak): 
+> When using in-DOM templates, there can be a "flash of un-compiled templates": the user may see raw mustache tags until the mounted component replaces them with rendered content.
+
+So, we need to do something...
+
+### Step 4: un-compiled template hiding
+
+`v-cloak` will help us to hide un-compiled template until it is ready. It's mean, we need to add the directive to container like this:
+
+```HTML
+<div class="container" id="app" v-cloak>
+...
+</div>
+```
+
+And to supplement CSS like this:
+
+```CSS
+[v-cloak] {
+  display: none;
+}
+```
+
+*Here we go! The page is refreshing smoothly.*
 
 ***
 
