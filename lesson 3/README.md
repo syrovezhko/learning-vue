@@ -19,6 +19,7 @@ Usually developers used that's short labels: `:` Instead of `v-bind` and `@` Ins
 Fore example: `v-bind:value="inputValue"` is equal to `:value="inputValue"`, `v-on:input="inputHandler"` is equal to `@input="inputHandler"`.
 
 Now, you may minimize the code like this. Just do it!
+
 ![image](do_it.gif)
 ***
 
