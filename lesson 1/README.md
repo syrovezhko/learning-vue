@@ -1,4 +1,8 @@
 # Lesson 1
+
+***[<< Back main branch](https://github.com/syrovezhko/learning-vue)***
+
+
 ## Counter
 
 Today we are going to create the simple counter:
@@ -168,8 +172,17 @@ I think the counter shouldn't go below zero. To fix it I suggest adding the cond
 <button class="btn danger" v-on:click="counter > 0 ? counter-- : 0">-</button>
 ```
 
-So, now it's look like counter.
+***
+
+***So, now it's look like counter.***
 
 Well, it was good sprint. I think it's tea time. I hope you have something like [this](https://github.com/syrovezhko/learning-vue/tree/46d9b1822226cdd9553d5476a3b2d2a4958d0591/lesson%201/src). Check it out before the break.
 
-See you next [lesson](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202).
+See you next lesson! Bye😀
+
+**[Contents](https://github.com/syrovezhko/learning-vue) | [Lesson 2](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202)**
+
+
+[lesson](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202).
+
+[Back main branch](https://github.com/syrovezhko/learning-vue)
