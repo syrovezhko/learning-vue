@@ -40,6 +40,63 @@ Now, we may remove `inputHandler` from methods. Also, `v-bind:value="inputValue"
 >
 ```
 You may see, the app works the same but 4 code strings shorter.
+
+### Step 3: local storage
+
+It's better to save the notes after refreshing page I guess. We will not used the API yet. The client side only.  
+Client-side storage can be done with cookies, Local Storage (technically “Web Storage”), IndexedDB, and WebSQL (a deprecated method that should not be used in new projects). I we’ll focus on Local Storage, the simplest of the storage mechanisms.  
+I've found  the official Vue2 [guide](https://v2.vuejs.org/v2/cookbook/client-side-storage.html). It should work Vue3 also, I hope so.  
+We are interested in the [Working with Complex Values](https://v2.vuejs.org/v2/cookbook/client-side-storage.html#Working-with-Complex-Values) section.
+
+Copy `mounted` hook to the `App` object. Pass `saveNote` method to the `methods` and call it in `addNewNote` and `removeNote` with `this` keyword.  
+Attention! Do not forget to change all `cats` to `notes`😅
+
+<details>
+<summary>The app.js file look like this now:</summary>
+
+```JS
+const App = {
+  data() {
+    return {
+      title: 'Note list',
+      placeholderString: 'Input your note please',
+      inputValue: '',
+      notes: [],
+    }
+  },
+  mounted() {
+    if (localStorage.getItem('notes')) {
+      try {
+        this.notes = JSON.parse(localStorage.getItem('notes'));
+      } catch(error) {
+        localStorage.removeItem('notes');
+      }
+    }
+  },
+  methods: {
+    addNewNote() {
+      if (this.inputValue !== '') {
+        this.notes.push(this.inputValue)
+        this.inputValue = ''
+        this.saveNote()
+      }
+    },
+    removeNote(index) {
+      this.notes.splice(index, 1)
+      this.saveNote()
+    },
+    saveNote() {
+      const parsed = JSON.stringify(this.notes);
+      localStorage.setItem('notes', parsed);
+    }
+  }
+}
+
+Vue.createApp(App).mount('#app')
+```
+</details>
+It's not so complicated. But the application become much more useful!
+
 ***
 
 **Hurray! We did it!**  
