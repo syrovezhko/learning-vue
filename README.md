@@ -81,13 +81,13 @@ It has spent 2 days total on the way to success.
 
 ***
 
-## Lesson 3: [A note taking app](https://github.com/syrovezhko/learning-vue/tree/lesson3/lesson%203)
+## Lesson 3: [A note taking app `v2`](https://github.com/syrovezhko/learning-vue/tree/lesson3/lesson%203)
 
 `05.08.2022`  
 ***Deploy link: [click](https://syrovezhko.github.io/learning-vue/lesson%203/src/).***
 
 
-![image](https://github.com/syrovezhko/learning-vue/blob/lesson2/lesson%203/note_taking_app_v2.gif)
+![image](https://github.com/syrovezhko/learning-vue/blob/lesson3/lesson%203/note_taking_app_v2.gif)
 
 This is the refinement of [the note taking app](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202). 
 
