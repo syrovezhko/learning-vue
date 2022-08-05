@@ -80,3 +80,23 @@ It has spent 2 days total on the way to success.
 ### ***Learn more: [click](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202)***
 
 ***
+
+## Lesson 3: [A note taking app](https://github.com/syrovezhko/learning-vue/tree/lesson3/lesson%203)
+
+`05.08.2022`  
+***Deploy link: [click](https://syrovezhko.github.io/learning-vue/lesson%203/src/).***
+
+
+![image](https://github.com/syrovezhko/learning-vue/blob/lesson2/lesson%203/note_taking_app_v2.gif)
+
+This is the refinement of [the note taking app](https://github.com/syrovezhko/learning-vue/tree/lesson2/lesson%202). 
+
+> I've made the code shorter and optimize. I've Added local storage of notes and uncompiled template hiding also.
+
+I've studied Labels like `:` and `@`, optimized form by `v-model`,   associated `notes` array with `local storage` and applied un-compiled template hiding via `v-cloak`.
+
+It was good sprint!
+
+### ***Learn more: [click](https://github.com/syrovezhko/learning-vue/tree/lesson3/lesson%203)***
+
+***
